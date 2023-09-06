@@ -8,9 +8,7 @@ let notes = [];
 
 app.use(express.static('public'));
 
-app.get('*', (req, res) => 
-    res.sendFile(path.join(__dirname, 'public/index.html'))
-);
+
 
 app.get('/notes', (req, res) => 
     res.sendFile(path.join(__dirname, 'public/notes.html'))
@@ -35,7 +33,11 @@ app.delete('/api/notes/:id', (req, res) => {
     const noteIndex = notes.findIndex(noteId);
     notes.splice(noteIndex);
     fs.writeFileSync(path.join(__dirname, 'db/db.json'), JSON.stringify(notes));
-})
+});
+
+app.get('*', (req, res) => 
+    res.sendFile(path.join(__dirname, 'public/index.html'))
+);
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
