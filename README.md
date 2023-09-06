@@ -6,7 +6,7 @@
 
  This application is used to write and save notes.
 
- ![Screenshot]('./Images/Screenshot1.png)
+ ![Screenshot](./Images/Screenshot1.png)
 
  ## Table Of Contents
 
@@ -23,8 +23,8 @@
  ## Usage
 
  Visit the website : https://samanthagard13.github.io/Note-Taker/
- 
- ![Screenshot2]('./Images/Screenshot2.png)
+
+ ![Screenshot2](./Images/Screenshot2.png)
 
   ## License
 
